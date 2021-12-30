@@ -17,14 +17,14 @@ spec:
           name: rv-park-catalog
           env:
             - name: KUMULUZEE_DATASOURCES0_CONNECTIONURL
-              value: jdbc:postgresql://surus.db.elephantsql.com/pswumkxj
+              value: jdbc:postgresql://surus.db.elephantsql.com/sxwcbjbb
             - name: KUMULUZEE_DATASOURCES0_USERNAME
-              value: pswumkxj
+              value: sxwcbjbb
             - name: KUMULUZEE_DATASOURCES0_PASSWORD
               valueFrom:
                 secretKeyRef:
                   name: pg-pass
-                  key: KUMULUZEE_DATASOURCES0_PASSWORD_RV
+                  key: KUMULUZEE_DATASOURCES0_PASSWORD_RV_PARK
             - name: KUMULUZEE_DATASOURCES0_POOL_MAX-SIZE
               value: "1"
           ports:
