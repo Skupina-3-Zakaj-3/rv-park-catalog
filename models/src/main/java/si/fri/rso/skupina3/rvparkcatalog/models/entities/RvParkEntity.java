@@ -28,6 +28,9 @@ public class RvParkEntity {
     @Column(name = "description")
     private String description;
 
+    @Column(name = "location")
+    private String location;
+
     public Integer getRv_park_id() {
         return rv_park_id;
     }
@@ -66,5 +69,13 @@ public class RvParkEntity {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
     }
 }

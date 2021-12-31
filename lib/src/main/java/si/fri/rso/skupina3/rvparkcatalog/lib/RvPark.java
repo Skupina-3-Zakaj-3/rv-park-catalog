@@ -7,6 +7,7 @@ public class RvPark {
     private String name;
     private Float cost_per_day;
     private String description;
+    private String location;
 
     public Integer getRv_park_id() {
         return rv_park_id;
@@ -46,5 +47,13 @@ public class RvPark {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
     }
 }

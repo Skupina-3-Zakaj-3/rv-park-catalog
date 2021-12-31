@@ -12,6 +12,7 @@ public class RvParkConverter {
         dto.setName(entity.getName());
         dto.setCost_per_day(entity.getCost_per_day());
         dto.setDescription(entity.getDescription());
+        dto.setLocation(entity.getLocation());
 
         return dto;
     }
@@ -23,6 +24,7 @@ public class RvParkConverter {
         entity.setName(dto.getName());
         entity.setCost_per_day(dto.getCost_per_day());
         entity.setDescription(dto.getDescription());
+        entity.setLocation(dto.getLocation());
 
         return entity;
     }
