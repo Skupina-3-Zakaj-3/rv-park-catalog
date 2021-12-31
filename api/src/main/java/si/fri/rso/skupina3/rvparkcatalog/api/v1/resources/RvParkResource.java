@@ -1,5 +1,6 @@
 package si.fri.rso.skupina3.rvparkcatalog.api.v1.resources;
 
+import com.kumuluz.ee.cors.annotations.CrossOrigin;
 import si.fri.rso.skupina3.rvparkcatalog.lib.RvPark;
 import si.fri.rso.skupina3.rvparkcatalog.services.beans.RvParkBean;
 
@@ -17,6 +18,7 @@ import java.util.logging.Logger;
 @Path("/parks")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes({MediaType.APPLICATION_JSON, MediaType.TEXT_PLAIN})
+@CrossOrigin(supportedMethods = "GET, POST, HEAD, DELETE, OPTIONS")
 public class RvParkResource {
 
     private Logger log = Logger.getLogger(RvParkResource.class.getName());
