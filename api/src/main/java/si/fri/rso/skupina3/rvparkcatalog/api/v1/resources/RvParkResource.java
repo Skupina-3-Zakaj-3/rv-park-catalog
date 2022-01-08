@@ -1,6 +1,7 @@
 package si.fri.rso.skupina3.rvparkcatalog.api.v1.resources;
 
 import com.kumuluz.ee.cors.annotations.CrossOrigin;
+import com.kumuluz.ee.logs.cdi.Log;
 import si.fri.rso.skupina3.rvparkcatalog.lib.RvPark;
 import si.fri.rso.skupina3.rvparkcatalog.services.beans.RvParkBean;
 
@@ -14,6 +15,7 @@ import javax.ws.rs.core.UriInfo;
 import java.util.List;
 import java.util.logging.Logger;
 
+@Log
 @ApplicationScoped
 @Path("/parks")
 @Produces(MediaType.APPLICATION_JSON)
